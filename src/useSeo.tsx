@@ -9,8 +9,8 @@ interface SEOProps {
 }
 
 interface SEOReturnProps {
-  getTitleTag: () => Tag
-  getMetaTags: () => Tag
+  titleTag: () => Tag
+  metaTags: () => Tag
 }
 
 type Tag = JSX.Element | null
@@ -21,10 +21,10 @@ function tag(content: string | undefined, element: JSX.Element): Tag {
 
 function useSeo(props: SEOProps): SEOReturnProps {
   return {
-    getTitleTag() {
+    titleTag() {
       return tag(props.title, <title>{props.title}</title>)
     },
-    getMetaTags() {
+    metaTags() {
       const metaTags = [
         tag(
           props.description,
