@@ -1,4 +1,4 @@
-# use-seo
+# 🔍 use-seo
 SEO is complicated, but what if you had a React hook that gave you all you need for your page.
 
 You are on the right place.
@@ -61,6 +61,7 @@ function App() {
 <meta name="description" content="This app is awesome!" />
 <meta name="keywords" content="Awesome, App, React" />
 <meta property="og:image" content="https://www.myawesomeapp.io/images/logo.png" />
+...
 ```
 
 
