@@ -64,4 +64,14 @@ function App() {
 ...
 ```
 
+### Contributing
 
+I would love to see you contributing to `use-seo`, also by giving feedback.
+If you think something is missing, [create a new issue](https://github.com/aganglada/use-seo/issues).
+
+[Pull request](https://github.com/aganglada/use-seo/pulls) are more than welcome ❤️️
+
+
+### License
+
+MIT &copy; aganglada
