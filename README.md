@@ -1,4 +1,5 @@
 # 🔍 use-seo
+
 SEO is complicated, but what if you had a React hook that gave you all you need for your page.
 
 You are on the right place.
@@ -18,7 +19,7 @@ import { Helmet } from 'react-helmet'
 import useSeo from 'use-seo'
 
 function App() {
-  const { titleTag, metaTags } = useSeo({
+  const { getTitleTag, getMetaTags } = useSeo({
     title: 'My App'
     description: 'This app is awesome!'
     url: 'https://www.myawesomeapp.io',
@@ -29,8 +30,8 @@ function App() {
   return (
     <div>
       <Helmet>
-        {titleTag}
-        {metaTags}
+        {getTitleTag}
+        {getMetaTags}
       </Helmet>
     </div>
   )
@@ -39,23 +40,29 @@ function App() {
 
 ## Options
 
-| Name        | Type   | Optional |
-|-------------|--------|----------|
-| title       | String | Yes      |
-| description | String | Yes      |
-| url         | String | Yes      |
-| keywords    | String | Yes      |
-| image       | String | Yes      |
+| Name          | Type   | Optional |
+| ------------- | ------ | -------- |
+| title         | String | Yes      |
+| description   | String | Yes      |
+| url           | String | Yes      |
+| keywords      | String | Yes      |
+| image         | String | Yes      |
+| imageAlt      | String | Yes      |
+| locale        | String | Yes      |
+| type          | String | Yes      |
+| author        | String | Yes      |
+| datePublished | String | Yes      |
+| dateModified  | String | Yes      |
 
 ## Returns
 
-### titleTag
+### getTitleTag
 
 ```jsx
 <title>My App</title>
 ```
 
-### metaTags
+### getMetaTags
 
 ```jsx
 <meta name="description" content="This app is awesome!" />
@@ -64,13 +71,31 @@ function App() {
 ...
 ```
 
+### getJSONLDScript
+
+```jsx
+<script type="application/ld+json">
+  {
+    "@id": "http://store.example.com/",
+    "@type": "Store",
+    "name": "Links Bike Shop",
+    "description": "The most \"linked\" bike store on earth!"
+  }
+</script>
+```
+
+### getCanonicalTag
+
+```jsx
+<link rel="canonical" href="https://www.myawesomeapp.io" />
+```
+
 ### Contributing
 
 I would love to see you contributing to `use-seo`, also by giving feedback.
 If you think something is missing, [create a new issue](https://github.com/aganglada/use-seo/issues).
 
 [Pull request](https://github.com/aganglada/use-seo/pulls) are more than welcome ❤️️
-
 
 ### License
 
