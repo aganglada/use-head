@@ -71,7 +71,7 @@ function App() {
 ...
 ```
 
-### getJSONLDScript
+### getJSONLDTag
 
 ```jsx
 <script type="application/ld+json">
