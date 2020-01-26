@@ -4,7 +4,7 @@
     "target": "es5",
     "module": "esnext",
     "lib": ["es2015"],
-    "jsx": "preserve",
+    "jsx": "react",
     "sourceMap": true,
     "strict": true,
     "skipLibCheck": true,
