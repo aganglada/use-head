@@ -1,9 +1,13 @@
 {
   "name": "use-seo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aganglada/use-seo.git"
+  },
   "files": [
     "lib",
     "package.json",
