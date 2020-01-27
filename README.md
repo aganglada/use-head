@@ -9,7 +9,7 @@ You are on the right place.
 ## Install
 
 ```bash
-yarn add use-seo
+npm install use-seo
 ```
 
 ## Basic Usage
