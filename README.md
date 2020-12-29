@@ -16,7 +16,7 @@ npm install use-seo
 
 ```js
 import { Helmet } from 'react-helmet'
-import useSeo from 'use-seo'
+import { useSeo } from 'use-seo'
 
 function App() {
   const { getTitleTag, getMetaTags } = useSeo({

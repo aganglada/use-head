@@ -1,0 +1,1 @@
+export { useSeo } from './useSeo'

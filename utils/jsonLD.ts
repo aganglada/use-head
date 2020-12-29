@@ -1,6 +1,6 @@
-import { SEOProps } from '../types/index'
+import { SEOProps } from '../types'
 
-function getJSONLD({
+function getJSONLd({
   url,
   title,
   type,
@@ -70,4 +70,4 @@ function getJSONLD({
     : schemaOrgJSONLD
 }
 
-export default getJSONLD
+export default getJSONLd
