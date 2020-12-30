@@ -19,7 +19,7 @@ import { Helmet } from 'react-helmet'
 import { useSeo } from 'use-seo'
 
 function App() {
-  const { getTitleTag, getMetaTags } = useSeo({
+  const { title, meta } = useSeo({
     title: 'My App'
     description: 'This app is awesome!'
     url: 'https://www.myawesomeapp.io',
@@ -30,8 +30,8 @@ function App() {
   return (
     <div>
       <Helmet>
-        {getTitleTag}
-        {getMetaTags}
+        {title}
+        {meta}
       </Helmet>
     </div>
   )
@@ -56,13 +56,13 @@ function App() {
 
 ## Returns
 
-### getTitleTag
+### title
 
 ```jsx
 <title>My App</title>
 ```
 
-### getMetaTags
+### meta
 
 ```jsx
 <meta name="description" content="This app is awesome!" />
@@ -71,7 +71,7 @@ function App() {
 ...
 ```
 
-### getJSONLDTag
+### jsonLD
 
 ```jsx
 <script type="application/ld+json">
@@ -84,7 +84,7 @@ function App() {
 </script>
 ```
 
-### getCanonicalTag
+### canonical
 
 ```jsx
 <link rel="canonical" href="https://www.myawesomeapp.io" />

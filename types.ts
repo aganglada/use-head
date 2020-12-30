@@ -13,10 +13,10 @@ export interface SEOProps {
 }
 
 export interface SEOReturnProps {
-  getTitleTag: () => Tag
-  getMetaTags: () => Tag
-  getJSONLDTag: () => Tag
-  getCanonicalTag: () => Tag
+  title: Tag
+  meta: Tag
+  jsonLD: Tag
+  canonical: Tag
 }
 
 export type Tag = JSX.Element | null
