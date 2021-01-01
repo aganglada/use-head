@@ -60,6 +60,11 @@ export function useSeo(props: SEOProps): SEOReturnProps {
     title: tag(props.title, <title>{props.title}</title>),
     canonical: tag(props.url, <link rel="canonical" href={props.url} />),
     meta: <>{metaTags.filter(Boolean)}</>,
-    jsonLD: <script type="application/ld+json">{JSON.stringify(getJSONLd(props))}</script>,
+    jsonLD: (
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(getJSONLd(props)) }}
+      />
+    ),
   }
 }
