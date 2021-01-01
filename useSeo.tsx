@@ -53,7 +53,7 @@ export function useSeo(props: SEOProps): SEOReturnProps {
       props.author,
       <meta name="twitter:creator" content={props.author} key="seo-twitter:creator" />,
     ),
-    tag(props.type, <meta name="twitter:card" content={props.type} key="seo-twitter:card" />),
+    tag(props.card, <meta name="twitter:card" content={props.type} key="seo-twitter:card" />),
   ]
 
   return {

@@ -8,6 +8,7 @@ export interface SEOProps {
   locale?: string
   type?: string
   author?: string
+  card?: 'summary' | 'summary_large_image' | 'player' | 'app'
   datePublished?: string
   dateModified?: string
 }
