@@ -1,6 +1,6 @@
 {
   "name": "use-seo",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "lib/index.js",
   "module": "lib/index.js",
   "license": "MIT",
