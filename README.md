@@ -1,28 +1,31 @@
-# 🔍 use-seo
+# 🔍 use-head
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-SEO is complicated, but what if you had a React hook that gave you all you need for your page.
+Getting SEO and Performance right is complicated, but what if you had a React hook that gave you all you need for your page.
 
 You are on the right place.
 
-`useSeo` is a React hook that based on some of your site properties, will return all the necessary tags you need to improve your SEO.
+`useHead` is a React hook that based on some of your site properties, will return all the necessary tags you need to improve your SEO and Performance.
 
 ## Install
 
 ```bash
-npm install use-seo
+npm install use-head
 ```
 
 ## Basic Usage
 
 ```js
 import { Helmet } from 'react-helmet'
-import { useSeo } from 'use-seo'
+import { useHead } from 'use-head'
 
 function App() {
-  const { title, meta } = useSeo({
+  const { title, meta } = useHead({
     title: 'My App'
     description: 'This app is awesome!'
     url: 'https://www.myawesomeapp.io',
@@ -95,7 +98,7 @@ function App() {
 
 ### Contributing
 
-I would love to see you contributing to `use-seo`, also by giving feedback.
+I would love to see you contributing to `use-head`, also by giving feedback.
 If you think something is missing, [create a new issue](https://github.com/aganglada/use-seo/issues).
 
 [Pull request](https://github.com/aganglada/use-seo/pulls) are more than welcome ❤️️
@@ -119,6 +122,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

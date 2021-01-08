@@ -1,1 +1,1 @@
-export { useSeo } from './useSeo'
+export { useHead } from './useHead'

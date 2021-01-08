@@ -1,4 +1,4 @@
-import { SEOProps } from '../types'
+import { HeadProps } from '../types'
 
 function getJSONLd({
   url,
@@ -9,7 +9,7 @@ function getJSONLd({
   author,
   datePublished,
   dateModified,
-}: SEOProps) {
+}: HeadProps) {
   const isArticle = type === 'article'
 
   const schemaOrgJSONLD = [
